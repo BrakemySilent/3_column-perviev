@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 90vw;
-  margin: 2rem 5vw 0;
+  margin: 2rem 5vw 2rem;
   border-radius: 8px;
 }
 .offert__box {
@@ -48,13 +48,89 @@ body {
   color: hsla(0deg, 0%, 100%, 0.75);
 }
 .offert__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
   margin: 0.5rem auto;
   color: rgb(255, 255, 255);
 }
 .offert__description-header {
-  margin: 10px 0px;
+  margin-top: 1rem;
   font-family: "Big Shoulders Display", cursive;
   font-size: 2rem;
   text-transform: uppercase;
+}
+.offert__description-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.4rem;
+}
+.offert__description-button {
+  align-self: center;
+  margin-top: 2rem;
+  width: 10rem;
+  height: 3rem;
+  background-color: hsla(0deg, 0%, 100%, 0.75);
+  border: none;
+  border-radius: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  color: hsl(31deg, 77%, 52%);
+  cursor: pointer;
+  transition: all 1s;
+}
+.offert__description-button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+.offert__description .blue {
+  color: hsl(184deg, 100%, 22%);
+}
+.offert__description .blue:hover {
+  color: white;
+}
+.offert__description .green {
+  color: hsl(179deg, 100%, 13%);
+}
+.offert__description .green:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .offert {
+    flex-direction: row;
+    height: 60vh;
+    width: 60vw;
+    margin: 20vh auto;
+  }
+  .offert__box {
+    padding: 5% 2%;
+  }
+  .offert__circle {
+    width: 100px;
+    height: 100px;
+  }
+  .offert__car {
+    font-size: 5rem;
+  }
+  .offert__description-header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  .offert__description-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .offert__description-button {
+    width: 14rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  .offert__description-button:hover {
+    border: 4px solid rgb(255, 255, 255);
+  }
 }/*# sourceMappingURL=main.css.map */

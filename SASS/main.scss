@@ -18,7 +18,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 90vw;
-	margin: 2rem 5vw 0;
+	margin: 2rem 5vw 2rem;
 	border-radius: 8px;
 
 	&__box {
@@ -56,15 +56,104 @@ body {
 	}
 
 	&__description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		width: 80%;
 		margin: 0.5rem auto;
 		color: colors.$white;
 
 		&-header {
-			margin: 10px 0px;
+			margin-top: 1rem;
 			font-family: 'Big Shoulders Display', cursive;
 			font-size: 2rem;
 			text-transform: uppercase;
 		}
+
+		&-text {
+			font-family: 'Lexend Deca', sans-serif;
+			font-size: 1rem;
+			color: colors.$transparentWhite;
+			line-height: 1.4rem;
+		}
+
+		&-button {
+			align-self: center;
+			margin-top: 2rem;
+			width: 10rem;
+			height: 3rem;
+			background-color: colors.$transparentWhite;
+			border: none;
+			border-radius: 50px;
+			font-family: 'Lexend Deca', sans-serif;
+			font-size: 1rem;
+			color: colors.$brightOrange;
+			cursor: pointer;
+			transition: all 1s;
+
+			&:hover {
+				background-color: transparent;
+				border: 2px solid colors.$white;
+				color: white;
+			}
+		}
+		.blue {
+			color: colors.$darkCyan;
+
+			&:hover {
+				color: white;
+			}
+		}
+		.green {
+			color: colors.$veryDarkCyan;
+			&:hover {
+				color: white;
+			}
+		}
 	}
 }
+
+// resolution 768px
+
+@media (min-width: 768px) {
+	.offert {
+		flex-direction: row;
+		height: 60vh;
+		width: 60vw;
+		margin: 20vh auto;
+
+		&__box {
+			padding: 5% 2%;
+		}
+		&__circle {
+			width: 100px;
+			height: 100px;
+		}
+
+		&__car {
+			font-size: 5rem;
+		}
+
+		&__description {
+			&-header {
+				margin-top: 2rem;
+				margin-bottom: 1rem;
+				font-size: 3rem;
+			}
+			&-text {
+				font-size: 1.5rem;
+				line-height: 1.8rem;
+			}
+
+			&-button {
+				width: 14rem;
+				height: 4rem;
+				font-size: 1.5rem;
+
+				&:hover {
+					border: 4px solid colors.$white;
+				}
+			}
+		}
+	}
+} ;
