@@ -1,0 +1,60 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.offert {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 2rem 5vw 0;
+  border-radius: 8px;
+}
+.offert__box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2em;
+  background-color: hsl(31deg, 77%, 52%);
+}
+.offert__box--blue {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.offert__box--green {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.offert__circle {
+  position: relative;
+  top: 0;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(68, 67, 62, 0.315);
+}
+.offert__car {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.offert__description {
+  width: 80%;
+  margin: 0.5rem auto;
+  color: rgb(255, 255, 255);
+}
+.offert__description-header {
+  margin: 10px 0px;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */

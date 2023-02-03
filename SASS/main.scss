@@ -1,0 +1,70 @@
+//font-family: 'Big Shoulders Display', cursive;
+//font-family: 'Lexend Deca', sans-serif;
+@use './colors' as colors;
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+.offert {
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	margin: 2rem 5vw 0;
+	border-radius: 8px;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 2em;
+		background-color: colors.$brightOrange;
+
+		&--blue {
+			background-color: colors.$darkCyan;
+		}
+
+		&--green {
+			background-color: colors.$veryDarkCyan;
+		}
+	}
+
+	&__circle {
+		position: relative;
+		top: 0;
+		left: 1rem;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		background-color: rgba(68, 67, 62, 0.315);
+	}
+	&__car {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%);
+		font-size: 2rem;
+		color: colors.$transparentWhite;
+	}
+
+	&__description {
+		width: 80%;
+		margin: 0.5rem auto;
+		color: colors.$white;
+
+		&-header {
+			margin: 10px 0px;
+			font-family: 'Big Shoulders Display', cursive;
+			font-size: 2rem;
+			text-transform: uppercase;
+		}
+	}
+}
